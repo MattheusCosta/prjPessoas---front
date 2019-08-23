@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+
+  <script src="components/jquery-3.4.1.min.js"></script>
+  <script src="components/comandos.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    $(document).ready(function(){
+      preencherLista();
+      desabilita();
+    });
+  </script>
+
+</head>
+<body class="has-backgroud-white-ter">
+  <!-- começo do body -->
+
+  <div class="container has-backgroud-white-ter">
+    <!-- começo do container -->
+
+    <div class="columns has-text-centered">
+      <div class="column">
+        <div class="field">
+          <div class="control">
+            <div class="tags has-addons">
+              <a href="index.html"><span class="tag is-dark is-large is-focus" id="pagina_cadastro">Cadastro</span></a>
+              <span class="tag is-info is-large" id="pagina_pesquisa">Pesquisa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-mobile is-centered">
+      <div class="column is-9">
+        <div class="select is-fullwidth">
+          <select name="" id="listaPessoas"></select><hr>
+        </div>
+      </div>
+      <div class="column is-2">
+        <button class="button" id="barraCodigo"><span class="icon is-small is-left"><i class="fas fa-camera"></i></span></button>
+      </div>
+    </div>
+
+    <div class="box has-background-light">
+      <!-- começo do box -->
+
+      <div class="columns">
+
+        <div class="column">
+          <figure class='media-left'>
+            <p class='mage is-64x64'>
+              <img id="imagem" class="img-responsive">
+            </p>
+          </figure>
+          <div class="fileUpload button">
+              <span>Upload</span>
+              <input type="file" class="upload" id="caminho">
+          </div>
+        </div>
+
+        <div class="column">
+          <input class="input is-rounded" type="text" placeholder="Nome" id="nome">
+        </div>
+
+        <div class="column">
+          <input class="input is-rounded" type="number" placeholder="Idade" id="idade">
+        </div>
+
+        <div class="column">
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="sexo" value="feminino" id="radio">
+              Feminino
+            </label>
+            <label class="radio">
+              <input type="radio" name="sexo" value="masculino" id="radio2">
+              Masculino
+            </label>
+          </div>
+        </div>
+
+        <div class="column">
+          <input class="input is-rounded" type="text" placeholder="Cidade" id="cidade">
+        </div>
+
+        <div class="column">
+          <input class="input is-rounded" type="text" placeholder="CPF" id="cpf">
+        </div>
+
+        <div class="column" id="editar_deletar">
+          <div class="field">
+            <a class="button is-primary is-outlined" style="width: 100px;" id="edita">
+              <span class="icon is-small">
+                <i class="fa fas fa-edit"></i>
+              </span>
+              <span>Editar</span>
+            </a>
+            <a class="button is-danger is-outlined" style="width: 100px;" id="deleta">
+              <span>Deletar</span>
+              <span class="icon is-small">
+                <i class="fas fa-trash"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="column" style="visibility: hidden;" id="salvar_cancelar">
+          <div class="field">
+            <a class="button is-success is-outlined"  style="width: 100px;" id="salva">
+              <span class="icon is-small">
+                <i class="fas fa-check"></i>
+              </span>
+              <span>Salvar</span>
+            </a>
+            
+            <a class="button" style="width: 100px;" id="cancela">
+              <span>Cancelar</span>
+              <span class="icon is-small">
+                <i class="fas fa-times"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- fim do box -->
+    </div>
+        
+    <!-- fim do container -->
+  </div>
+
+  <!-- fim do body -->
+</body>
+</html>

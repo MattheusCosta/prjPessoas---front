@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+
+  <script src="components/jquery-3.4.1.min.js"></script>
+  <script src="components/comandos.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    $(document).ready(function(){
+      desabilita();
+    });
+  </script>
+</head>
+<body class="has-backgroud-white-ter">
+
+  <div class="container">
+
+    <div class="columns has-text-centered">
+      <div class="column">
+        <div class="field">
+          <div class="control">
+            <div class="tags has-addons">
+              <a href="index.html"><span class="tag is-info is-large is-focus" id="pagina_cadastro">Cadastro</span></a>
+              <a href="lista.html" id="botaoPesquisa"><span class="tag is-dark is-large" id="pagina_pesquisa">Pesquisa</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box has-background-light">
+
+      <div class="columns has-text-centered">
+        <div class="column">
+          <h1 class="title">Cadastro</h1>
+        </div>
+      </div>
+
+      <div class="columns">
+
+        <div class="column">
+          <input class="input is-rounded" type="text" placeholder="Nome" id="nome">
+        </div>
+        <div class="column">
+          <input class="input is-rounded" type="number" placeholder="Idade" id="idade">
+        </div>
+        <div class="column">
+          <div class="control">
+            <center>
+            <label class="radio">
+              <input type="radio" name="sexo" value="feminino" id="radio">
+              Feminino
+            </label>
+            <label class="radio">
+              <input type="radio" name="sexo" value="masculino" id="radio2">
+              Masculino
+            </label>
+            </center>
+          </div>
+        </div>
+        <div class="column">
+          <input class="input is-rounded" type="text" placeholder="Cidade" id="cidade">
+        </div>
+        <div class="column">
+          <input class="input is-rounded" type="text" placeholder="CPF" id="cpf">
+        </div>
+        <div class="column">
+          <input class="input is-rounded" type="file" id="caminho">
+        </div>
+      </div>
+
+      <div class="columns is-mobile">
+        <div class="column">
+          <button class="button is-info is-outlined" id="novo">Novo</button>
+        </div>
+        <div class="column">
+          <button class="button is-success is-outlined" id="salvar">Salvar</button>
+        </div>
+        <div class="column">
+          <button class="button" id="cancelar">Cancelar</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+</body>
+</html>

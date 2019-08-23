@@ -1,0 +1,47 @@
+.fileUpload {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+}
+.fileUpload input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.has-addons{
+  margin-top: 8%;
+}
+#botaoPesquisa{
+  margin-left: 5%;
+}
+#pagina_cadastro{
+  margin-left: 5%;
+}
+#pagina_pesquisa{
+  margin-left: 5%;
+}
+#pai{
+  position: relative;
+}
+#editar_deletar{
+  position: absolute;
+  margin-left: 30px;
+}
+#salvar_cancelar{
+  margin-left: 30px;
+}
+#caminho{
+  height: 42px;
+}
+#editar_deletar{
+  margin-left: 15%;
+}
+#salvar_cancelar{
+  margin-left: 17%;
+}
