@@ -1,8 +1,5 @@
-
 // Cadastro de pessoas
-
 $(document).on("click","#salvar",function(){
-
     var prop = document.getElementById('caminho').files[0];
     var nome_imagem = prop.name;
     var extensao_imagem = nome_imagem.split('.').pop().toLowerCase();
